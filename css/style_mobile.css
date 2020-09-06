@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+
+	#sec_article .box_article .card {
+		display: block;
+		max-width: 310px;
+		margin: 0 auto;
+	}
+
+	#sec_article .box_article .card .column {
+		display: block;
+		width: 100%;
+	}
+
+	#sec_article .box_article .card .column:first-child {
+		width: 100%;
+		max-width: 100%;
+		max-height: 200px;
+		border-radius: 20px 20px 0 0;
+	}
+
+	#sec_article .box_article .card .column:last-child{
+		width: 100%;
+		max-width: 100%;
+		padding: 30px 22px 20px 22px;
+	}
+
+	#sec_article .box_article .card .column .content .main_title {
+		font-size: 16px;
+	}
+
+	#sec_article .box_article .card .column .box_autor .share .balloon_info {
+		top: auto;
+	    bottom: -20px;
+	    right: -22px;
+	    width: 310px;
+		padding: 15px 40px 15px 40px;
+		border-radius: 0 0 20px 20px;
+	}
+
+	#sec_article .box_article .card .column .box_autor .share .balloon_info:before {
+		display: none;
+	}
+}

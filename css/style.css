@@ -1,0 +1,209 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	text-align: left;
+	font-weight: 300;
+	font-size: 13px;
+	font-family: Manrope;
+	line-height: 1.5;
+}
+
+.render_contain{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.render_cover{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#sec_article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background: #edf2f8;
+}
+
+#sec_article .box_article .card {
+	display: flex;
+    justify-content: center;
+	max-width: 730px;
+	text-decoration: none;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+#sec_article .box_article .card .column {
+	display: inline-block;
+	width: 50%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#sec_article .box_article .card .column:first-child {
+	width: 100%;
+	max-width: 290px;
+	box-sizing: border-box;
+	border-radius: 20px 0 0 20px;
+	margin: 0 auto;
+	margin-left: 0;
+	overflow: hidden;
+}
+
+#sec_article .box_article .card .column:last-child{
+	width: 100%;
+	max-width: 150;
+	padding: 30px 40px 30px 40px;
+}
+
+#sec_article .box_article .card .column .content .main_title {
+	text-align: left;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: #4b5368;
+}
+
+#sec_article .box_article .card .column .content .text_info {
+	text-align: left;
+	font-weight: 500;
+	font-size: 13px;
+	margin-bottom: 25px;
+	color: #6d7f97;
+}
+
+#sec_article .box_article .card .column .box_autor {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec_article .box_article .card .column .box_autor .autor {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+	margin-left: 0;
+}
+
+#sec_article .box_article .card .column .box_autor .autor .circle_image {
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#sec_article .box_article .card .column .box_autor .autor .title_autor {
+	display: block;
+	text-align: left;
+	font-weight: 700;
+	padding-left: 10px;
+	color: #4b5368;
+}
+
+#sec_article .box_article .card .column .box_autor .autor .title_autor small {
+	display: block;
+	text-align: left;
+	font-weight: 500;
+	color: #6d7f97;
+}
+
+#sec_article .box_article .card .column .box_autor .share {
+	position: relative;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-right: 0;
+}
+
+#sec_article .box_article .card .column .box_autor .share:hover .button_share{
+	color: #fff;
+	background: #879aaf;
+}
+
+#sec_article .box_article .card .column .box_autor .share:hover .balloon_info{
+	opacity: 1;
+	pointer-events: all;
+}
+
+#sec_article .box_article .card .column .box_autor .button_share {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-right: 0;
+	box-sizing: border-box;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #879aaf;
+	background: #ecf1f7;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info {
+	position: absolute;
+	top: -40px;
+    right: -100px;
+	width: 250px;
+	padding: 15px 40px 15px 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	transition: .3s;
+	background: #49556b;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info:before {
+	content: "";
+	position: absolute;
+	bottom: -7px;
+    left: 50%;
+	transform: rotate(45deg);
+	width: 15px;
+    height: 15px;
+	box-sizing: border-box;
+	background: #49556b;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info .list_share{
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info .list_share li{
+	display: inline-block;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info .list_share li:first-child{
+	text-align: left;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+#sec_article .box_article .card .column .box_autor .share .balloon_info .list_share li a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 15px;
+	color: #fff;
+}
